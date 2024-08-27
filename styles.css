@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+}
+
+h1{color: black;}
+h2{color: blueviolet;}
+h3{color: blue;}
+h4{color: green;}
+h5{color: orange;}
+h6{color: aqua;}
+
+
+img{
+    width: 320px;
+    height: 330px;
+    filter: drop-shadow(1px 1px 60px blue);
+    border-radius: 50px;
+    position: absolute;
+    left: 1000px;
+    top: 50px;
+}
+
+.title{
+    text-align: center;
+
+}
+.title-text {
+    background: linear-gradient(to right, 
+        #F5CBA7, red, blue, black, chocolate, orange);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    background-size: 300%;
+    animation: animated 5s linear infinite;
+    position: relative;
+}
+
+.title-text::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajusta la posición vertical de la línea */
+    width: 100%;
+    height: 2px; /* Ajusta el grosor de la línea */
+    background: linear-gradient(to right, 
+        #F5CBA7, red, blue, black, chocolate, orange);
+    background-size: 300%;
+    animation: animated 5s linear infinite;
+}

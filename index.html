@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PLACA WEMO D1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<h1 class="title-text">PLACA WEMOS D1</h1>
+  <hr>
+<h4>
+Curso:6to 2da <br>
+Grupo: B <br>
+Alumnos:<br>
+Muñoz Santiago<br>
+Paez Melody<br>
+Paez Joscelyn<br>
+Sosa Noemi<br>
+Sambrino Gabriel<br>
+</h4>
+
+
+<img src="https://www.prometec.net/wp-content/uploads/2016/03/d1_2.jpg" width="530" height="400"/> <br>
+<h1>Caracteristicas</h1>
+<h3>Estas son algunas de las características más relevantes: <br>
+    Procesador de 32 bit de bajo consumo
+    Velocidad de 80MHz (máximo de 160MHz)<br>
+    32 KiB RAM instrucciones, 32 KiB RAM cache<br>
+    80 KiB RAM para datos de usuario<br>
+    Memoria flash externa hasta 16MiB<br>
+    Pila de TCP/IP integrada<br>
+    Wifi 802.11 b/g/n 2.4GHz (soporta WPA/WPA2)<br>
+    Certificado por FCC, CE, TELEC, WiFi Alliance y SRRC
+    16 pins GPIO<br>
+    PWM en todos los pines (10 bits)<br>
+    Conversor analógico digital de 10 bits<br>
+    UART (2x TX y 1x RX)<br>
+    SPI, I2C, I2S<br>
+    Voltaje de operación 3.0 a 3.6V<br>
+    Consumo medio 80mA<br>
+  Modo consumo stand-by (1mW) y deep sleep (1uA).<br>
+  <br>
+  LA WEMOSD1: <br>
+  No cabe duda de que los chips ESP8266 han sido una auténtica revelación en el mercado de los WIFI sencillos y más importante aún, baratos. <br> 
+  <br>
+  Cuando miro el Google Analitics para ver qué cosas son lo que más nos interesan, de esta nuestra casa, las páginas relativas al ESP8266 suelen ser siempre las primeras en la lista. <br>
+  <br>
+  Hace algo más de un año, conseguir que tu Arduino se conectara a la WIFI, suponía rascarte el bolsillo hasta encontrar unos 70E además de tu Arduino.<br>
+  <br>
+  Pero con la aparición de los ESP8266 empezaron a aparecer multitud de modelos sencillos basados en el, de modo que conseguir una conexión básica era sencillo y por poco más de 5€, lo que ha sido toda una revolución sin duda. <br>
+  <br>
+  Pero como la felicidad nunca es completa, el fabricante chino de este chip se prodigó sacando al mercado toda una colección de modelos con diferentes pines hasta conseguir que tuviéramos una empanada mental de tamaño extra luxe.<br>
+  <br>
+  No me extraña porque hacía falta dedicar un rato al tema para entender que a pesar de los infinitos módulos de montaje que nos vendían como cosas distintas, el chip era siempre el mismo y la diferencia correspondía solamente a la montura en la que se soldaba el chip. <br>
+  </h3>
+  
+<h1>Proyecto posible a realizar</h1><br>
+  <h3>Los proyectos que se pueden realizar con el D1 woome:<br>
+1- Sistema de monitoreo en tiempo real: se puede utilizar el D1 woome para crear un sistema de monitoreo en tiempo real que recopile datos de sensores como temperatura, humedad, luz,etc<br>
+2- los envíe a una plataforma en la nube para su análisis. <br>
+3- Control de dispositivos domésticos inteligentes: con el D1.
+4- Estación Meteorológica Personalizada: Crea tu propia estación meteorológica con el D1 Woome para recopilar datos meteorológicos locales como temperatura, presión atmosférica, y humedad, y visualizarlos en tiempo real.<br>
+5- Sistema de Riego Automatizado: Utiliza el D1 Woome para automatizar el sistema de riego de tu jardín o huerto, controlando la cantidad de agua que reciben las plantas en función de la humedad del suelo.<br>
+6- Seguimiento de Activos con GPS: Implementa un sistema de seguimiento de activos utilizando el D1 Woome y un módulo GPS para rastrear la ubicación de objetos o vehículos en tiempo real.<br>
+ </h3>
+<h1>Hacer funcionar un proyecto basico</h1><br>
+  <h3>
+    Para hacer funcionar un proyecto básico con un D1 Woome, puedes comenzar con un proyecto simple como encender un LED utilizando el D1 Woome y un resistor. <br>
+    Aquí te dejo los pasos para realizar este proyecto:
+ 
+Materiales necesarios:
+ 
+- D1 Woome
+- LED
+- Resistencia de 220 ohm (o valor adecuado para el LED)
+- Protoboard
+- Cables de conexión
+ 
+Pasos para hacer funcionar el proyecto:
+ 
+    <br>1. Conexión del LED y la Resistencia:<br>
+ 
+- Conecta el ánodo (lado más largo) del LED al pin D1 del D1 Woome a través de la resistencia.<br>
+- Conecta el cátodo (lado más corto) del LED a tierra (GND) en el D1 Woome.<br>
+    <br>2. Programación del D1 Woome<br>
+ 
+- Utiliza el entorno de desarrollo Arduino IDE o PlatformIO para programar el D1 Woome.<br>
+- Asegúrate de tener las bibliotecas necesarias instaladas para el D1 Woome.<br>
+    <br>3. Código de Ejemplo:<br>
+ 
+cpp
+ Copiar
+<br>
+#define LED_PIN D1<br>
+
+void setup() {<br>
+  pinMode(LED_PIN, OUTPUT);<br>
+}<br>
+
+void loop() {<br>
+  digitalWrite(LED_PIN, HIGH); // Enciende el LED<br>
+  delay(1000); // Espera 1 segundo<br>
+  digitalWrite(LED_PIN, LOW); // Apaga el LED<br>
+  delay(1000); // Espera 1 segundo<br>
+}<br>
+ 
+    <br>4. Carga del Código en el D1 Woome:<br>
+ 
+- Conecta el D1 Woome a tu computadora a través de un cable USB.<br>
+- Selecciona el D1 Woome como placa y el puerto correcto en el entorno de desarrollo.<br>
+- Carga el código en el D1 Woome.<br>
+    <br>5. Prueba:<br>
+ 
+- Una vez cargado el código, el LED debería comenzar a parpadear según el programa.<br>
+- Si el LED no enciende, verifica las conexiones y el código.<br>
+    <br>
+Este proyecto básico te permitirá familiarizarte con el D1 Woome y su programación.<br>
+A partir de aquí, puedes explorar proyectos más avanzados incorporando sensores, actuadores y conectividad a Internet para crear aplicaciones más complejas. <br>
+¡Disfruta experimentando con tu D1 Woome!<br>
+  </h3>
+  
+  
+  
+<!--INVESTIGAR POR EL PUNTO RECIBIDO PLACA WEMO D1
+CARACTERISTICAS TECNICAS Y CAPACIDADES DEL DISPOSTIVO
+PROYECTO POSIBLE DE REALIZAR
+HACER FUNCIONAR UN PROYECTO BASICO (POSIBLE EN LA VIDA REAL)
+COMENZAR A DISEÑAR UN PROYECTO AVANZADO COMO PROYECTO FINAL QUE INCLUYA IOTE-->
+</body>
+</html>
